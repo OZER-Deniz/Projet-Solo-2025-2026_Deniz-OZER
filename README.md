@@ -6,5 +6,5 @@
 - NOM : Ozer
 - PRÉNOM : Deniz
 - GROUPE : C1
-- URL du site :
+- URL du site : jocelyn-bell-denizozer.netlify.app
 - URL FIGMA : https://www.figma.com/design/35LRv9OGvTRpy0l5eAfCXJ/Jocelyn-Bell-maquette-projet-solo--Copy-?node-id=116-876&t=Z3N8NqKPArBVpGWB-1

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Jocelyn Bell</title>
+    <meta name="description"
+        content="En savoir plus sur le projet L'Effet Matilda – Jocelyn Bell Burnell, une initiative pédagogique dédiée à la reconnaissance des femmes dans la science.">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/components/a-propos.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="header__logo-image"
+                    aria-label="Logo du projet Jocelyn Bell">
+                <span class="header__logo-text">
+                    <span class="header__logo-text--first">JOCELYN</span>
+                    <span class="header__logo-text--second">BELL</span>
+                </span>
+            </a>
+
+            <nav class="header__nav">
+                <div class="header__lang-selector" aria-label="Sélecteur de langue">
+                    <a href="a-propos.html" class="header__lang-btn header__lang-btn--active" aria-current="page"
+                        lang="fr">FR</a>
+                    <a href="../en/a-propos.html" class="header__lang-btn" lang="en">EN</a>
+                </div>
+
+                <button class="header__menu-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
+                    aria-controls="main-menu">
+                    <span class="header__menu-btn-text">MENU</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <aside class="menu" id="main-menu" aria-hidden="true">
+        <div class="menu__container">
+            <div class="menu__header">
+                <a href="../index.html" class="menu__logo">
+                    <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="menu__logo-image"
+                        aria-label="Logo du projet Jocelyn Bell">
+                    <span class="menu__logo-text">
+                        <span class="menu__logo-text--first">JOCELYN</span>
+                        <span class="menu__logo-text--second">BELL</span>
+                    </span>
+                </a>
+
+                <div class="menu__controls">
+                    <div class="menu__lang-selector" aria-label="Sélecteur de langue">
+                        <a href="a-propos.html" class="menu__lang-btn menu__lang-btn--active" aria-current="page"
+                            lang="fr">FR</a>
+                        <a href="../en/a-propos.html" class="menu__lang-btn" lang="en">EN</a>
+                    </div>
+
+                    <button class="menu__close-btn" aria-label="Fermer le menu de navigation">
+                        <span class="menu__close-icon">X</span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="menu__nav" aria-label="Navigation principale">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--expandable">
+                        <button class="menu__link menu__link--parent" aria-expanded="false"
+                            aria-controls="articles-submenu">
+                            ARTICLES
+                            <span class="menu__arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="menu__submenu" id="articles-submenu">
+                            <li class="menu__subitem">
+                                <a href="article-1.html" class="menu__sublink">JOCELYN BELL BURNELL : L'ÉTOILE OUBLIÉE
+                                    DE CAMBRIDGE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-2.html" class="menu__sublink">L'EFFET MATILDA : QUAND L'HISTOIRE OUBLIE
+                                    LES FEMMES DE SCIENCE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-3.html" class="menu__sublink">LES PULSARS : BATTEMENTS D'ÉTOILES AU
+                                    CŒUR DE L'UNIVERS</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-4.html" class="menu__sublink">2001, L'ODYSSÉE DE L'ESPACE : LE RÊVE
+                                    COSMIQUE DE KUBRICK</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-5.html" class="menu__sublink">LA BIBLE DE L'ASTRONOMIE : RACONTER LES
+                                    ÉTOILES POUR TOUS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="frise-matilda.html" class="menu__link">FRISE DES MATILDA</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="a-propos.html" class="menu__link">À PROPOS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="glossaire.html" class="menu__link">GLOSSAIRE</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact.html" class="menu__link">CONTACT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="autres-projet.html" class="menu__link">AUTRES PROJETS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="a-propos">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="../index.html" class="breadcrumb__link">ACCUEIL</a>
+                </li>
+                <li class="breadcrumb__item" aria-current="page">
+                    <span class="breadcrumb__text">À PROPOS</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-name">À PROPOS</span>
+                    </h1>
+                </div>
+                <figure class="hero__figure">
+                    <img src="../assets/img/hero-propos.avif"
+                        alt="Illustration pour la page À propos du projet Jocelyn Bell" class="hero__image" role="img"
+                        aria-label="Page À propos">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="a-propos__section">
+            <div class="a-propos__container">
+                <p class="a-propos__intro">Le projet L'Effet Matilda – Jocelyn Bell Burnell est né au département MMI de
+                    Montbéliard en 2025. Créé dans le cadre d'un exercice pédagogique, il a pour ambition de rendre
+                    hommage aux femmes scientifiques invisibilisées, à commencer par Jocelyn Bell Burnell, découvreuse
+                    des pulsars, longtemps effacée de l'histoire officielle de l'astronomie.</p>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="a-propos__values">
+            <div class="a-propos__container">
+                <h2 class="a-propos__subtitle">Notre vision</h2>
+                <p class="a-propos__description">Notre équipe a voulu concevoir un site à la fois éducatif et immersif,
+                    mêlant sciences, culture et engagement social. Nous croyons qu'il est possible de vulgariser sans
+                    simplifier, d'émouvoir tout en informant, et de parler d'égalité sans militantisme agressif
+                    simplement en rendant la vérité visible.</p>
+            </div>
+        </section>
+
+        <!-- Values List -->
+        <section class="a-propos__pillars">
+            <div class="a-propos__container">
+                <h2 class="sr-only">Les piliers du projet</h2>
+                <div class="a-propos__pillars-grid">
+                    <article class="a-propos__pillar">
+                        <h3 class="a-propos__pillar-title">Éthique et éco-conçue</h3>
+                        <p class="a-propos__pillar-text">Avec un site sobre et respectueux de l'environnement numérique.
+                        </p>
+                    </article>
+                    <article class="a-propos__pillar">
+                        <h3 class="a-propos__pillar-title">Inclusive</h3>
+                        <p class="a-propos__pillar-text">En rendant la science accessible à tous, en français et en
+                            anglais.</p>
+                    </article>
+                    <article class="a-propos__pillar">
+                        <h3 class="a-propos__pillar-title">Collaborative</h3>
+                        <p class="a-propos__pillar-text">En mêlant travail humain et assistance intelligente (IA) pour
+                            enrichir la réflexion et la création.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="a-propos__conclusion">
+            <div class="a-propos__container">
+                <p class="a-propos__quote">"Parce que chaque découverte mérite d'avoir un nom,<br>Et que chaque nom
+                    mérite d'être entendu."</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__branding">
+                <a href="../index.html" class="footer__logo">
+                    <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="footer__logo-image"
+                        aria-label="Logo du projet Jocelyn Bell">
+                </a>
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation du pied de page">
+                <h2 class="footer__nav-title">MENU</h2>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="frise-matilda.html" class="footer__nav-link">Frise des
+                            Matilda</a>
+                    </li>
+                    <li class="footer__nav-item"><a href="a-propos.html" class="footer__nav-link">À propos</a></li>
+                    <li class="footer__nav-item"><a href="glossaire.html" class="footer__nav-link">Glossaire</a></li>
+                    <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__social">
+                <h2 class="footer__social-title">RÉSEAUX</h2>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur X (anciennement Twitter)">
+                            <img src="../assets/icon/x.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">X</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur YouTube">
+                            <img src="../assets/icon/ytb.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur Instagram">
+                            <img src="../assets/icon/insta.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur TikTok">
+                            <img src="../assets/icon/tiktok.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__credits">
+                <p class="footer__credits-text">
+                    projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+
+</html>

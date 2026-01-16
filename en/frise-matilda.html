@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Matilda Timeline - Jocelyn Bell</title>
+    <meta name="description"
+        content="Discover the chronological timeline of forgotten women scientists and the Matilda Effect that explains the invisibilization of their contributions.">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/components/frise-matilda.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icon/logo.svg" alt="Jocelyn Bell Logo" class="header__logo-image"
+                    aria-label="Jocelyn Bell project logo">
+                <span class="header__logo-text">
+                    <span class="header__logo-text--first">JOCELYN</span>
+                    <span class="header__logo-text--second">BELL</span>
+                </span>
+            </a>
+
+            <nav class="header__nav">
+                <div class="header__lang-selector" aria-label="Language selector">
+                    <a href="../fr/frise-matilda.html" class="header__lang-btn" lang="fr">FR</a>
+                    <a href="frise-matilda.html" class="header__lang-btn header__lang-btn--active" aria-current="page"
+                        lang="en">EN</a>
+                </div>
+
+                <button class="header__menu-btn" aria-label="Open navigation menu" aria-expanded="false"
+                    aria-controls="main-menu">
+                    <span class="header__menu-btn-text">MENU</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <aside class="menu" id="main-menu" aria-hidden="true">
+        <div class="menu__container">
+            <div class="menu__header">
+                <a href="../index.html" class="menu__logo">
+                    <img src="../assets/icon/logo.svg" alt="Jocelyn Bell Logo" class="menu__logo-image"
+                        aria-label="Jocelyn Bell project logo">
+                    <span class="menu__logo-text">
+                        <span class="menu__logo-text--first">JOCELYN</span>
+                        <span class="menu__logo-text--second">BELL</span>
+                    </span>
+                </a>
+
+                <div class="menu__controls">
+                    <div class="menu__lang-selector" aria-label="Language selector">
+                        <a href="../fr/frise-matilda.html" class="menu__lang-btn" lang="fr">FR</a>
+                        <a href="frise-matilda.html" class="menu__lang-btn menu__lang-btn--active" aria-current="page"
+                            lang="en">EN</a>
+                    </div>
+
+                    <button class="menu__close-btn" aria-label="Close navigation menu">
+                        <span class="menu__close-icon">X</span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="menu__nav" aria-label="Main navigation">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--expandable">
+                        <button class="menu__link menu__link--parent" aria-expanded="false"
+                            aria-controls="articles-submenu">
+                            ARTICLES
+                            <span class="menu__arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="menu__submenu" id="articles-submenu">
+                            <li class="menu__subitem">
+                                <a href="article-1.html" class="menu__sublink">JOCELYN BELL BURNELL: THE FORGOTTEN STAR
+                                    OF CAMBRIDGE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-2.html" class="menu__sublink">THE MATILDA EFFECT: WHEN HISTORY FORGETS
+                                    WOMEN IN SCIENCE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-3.html" class="menu__sublink">PULSARS: STELLAR HEARTBEATS AT THE HEART
+                                    OF THE UNIVERSE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-4.html" class="menu__sublink">2001, A SPACE ODYSSEY: KUBRICK'S COSMIC
+                                    DREAM</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-5.html" class="menu__sublink">THE ASTRONOMY BIBLE: TELLING THE STARS
+                                    FOR EVERYONE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="frise-matilda.html" class="menu__link">MATILDA TIMELINE</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="a-propos.html" class="menu__link">ABOUT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="glossaire.html" class="menu__link">GLOSSARY</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact.html" class="menu__link">CONTACT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="autres-projet.html" class="menu__link">OTHER PROJECTS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="frise">
+        <!-- Breadcrumb Navigation -->
+        <nav class="frise__breadcrumb" aria-label="Breadcrumb navigation">
+            <ol class="frise__breadcrumb-list">
+                <li class="frise__breadcrumb-item">
+                    <a href="../index.html" class="frise__breadcrumb-link">HOME</a>
+                </li>
+                <li class="frise__breadcrumb-item">
+                    <span class="frise__breadcrumb-separator">&gt;</span>
+                    <span class="frise__breadcrumb-current" aria-current="page">MATILDA TIMELINE</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Introduction Section -->
+        <section class="frise__intro">
+            <div class="frise__intro-content">
+                <h1 class="frise__intro-title">OUR MATILDA TIMELINE</h1>
+                <p class="frise__intro-subtitle">THESE WOMEN WHO MADE SCIENCE IN THE SHADOWS</p>
+
+                <div class="frise__intro-text">
+                    <p>The history of science is not only that of discoveries, but also that of silences.
+                        Behind each great advancement often hide researchers, thinkers, explorers whose names have been
+                        erased, minimized, or attributed to others.</p>
+
+                    <p>This phenomenon has a name: <strong>the Matilda Effect</strong>, in tribute to Matilda Joslyn
+                        Gage, the
+                        activist who, as early as the 19th century, denounced the invisibilization of women in
+                        knowledge.
+                    </p>
+
+                    <p>This timeline traces the journey of these forgotten or belatedly recognized women, from Antiquity
+                        to
+                        the present day. They observed the stars, deciphered matter, revealed life, but their genius was
+                        often eclipsed.</p>
+
+                    <p>Today, their stories reappear, like constellations long lost in the night of time.</p>
+
+                    <p>From Hypatia to Jocelyn Bell Burnell, from Rosalind Franklin to Vera Rubin, these Matildas remind
+                        us of an
+                        essential truth:</p>
+
+                    <blockquote class="frise__intro-quote">
+                        "science truly progresses only when it gives voice to all those who make it."
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="frise__timeline" aria-label="Timeline of women scientists">
+            <h2 class="frise__timeline-title sr-only">Chronological timeline of Matildas</h2>
+
+            <!-- Card 1: Émilie du Châtelet -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-1.avif"
+                        alt="Portrait of Émilie du Châtelet (1706-1749), physicist and philosopher"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">ÉMILIE DU CHÂTELET</h3>
+                    <p class="frise__card-period">(1706-1749)</p>
+                    <p class="frise__card-field">Field: Physics and philosophy</p>
+
+                    <p class="frise__card-description">
+                        Translated and commented on Newton's Principia Mathematica in French, making Newtonian
+                        physics accessible to Europe. Her work is attributed to Voltaire or minimized as mere
+                        "accompanying notes".
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "Without her, France would never have read Newton."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 2: Lise Meitner -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-2.avif" alt="Portrait of Lise Meitner (1878-1968), nuclear physicist"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">LISE MEITNER</h3>
+                    <p class="frise__card-period">(1878-1968)</p>
+                    <p class="frise__card-field">Field: Nuclear physics</p>
+
+                    <p class="frise__card-description">
+                        Co-discovered nuclear fission with Otto Hahn in 1938. Otto Hahn alone received the 1944 Nobel
+                        Prize in Chemistry. Meitner, though responsible for the theoretical interpretation, was ignored.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She explained the bomb... but refused to build it."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 3: Rosalind Franklin -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-3.avif"
+                        alt="Portrait of Rosalind Franklin (1920-1958), biophysicist and molecular biologist"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">ROSALIND FRANKLIN</h3>
+                    <p class="frise__card-period">(1920-1958)</p>
+                    <p class="frise__card-field">Field: Biophysics, molecular biology</p>
+
+                    <p class="frise__card-description">
+                        Thanks to her X-ray diffraction images, she enabled Watson and Crick to discover the
+                        double helix structure of DNA. Died before official recognition; her role was fully
+                        acknowledged only after her death.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She revealed the code of life, without ever being cited."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 4: Jocelyn Bell Burnell -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-4.avif"
+                        alt="Portrait of Jocelyn Bell Burnell (born 1943), astrophysicist and radio astronomer"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">JOCELYN BELL BURNELL</h3>
+                    <p class="frise__card-period">(BORN 1943)</p>
+                    <p class="frise__card-field">Field: Astrophysics, radio astronomy</p>
+
+                    <p class="frise__card-description">
+                        Discovered pulsars in 1967, rapidly rotating neutron stars. Her thesis supervisor
+                        received the 1974 Nobel Prize in Physics; she was excluded from the reward.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She heard the heartbeat of the universe - but her name was silenced."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 5: Vera Rubin -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-5.avif" alt="Portrait of Vera Rubin (1928-2016), astronomer"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">VERA RUBIN</h3>
+                    <p class="frise__card-period">(1928-2016)</p>
+                    <p class="frise__card-field">Field: Astronomy</p>
+
+                    <p class="frise__card-description">
+                        Discovered observational evidence of dark matter, revolutionizing our understanding of
+                        the universe. Long excluded from the Nobel despite a major discovery.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She saw what no one wanted to see: the invisible universe."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 6: Chien-Shiung Wu -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-6.avif"
+                        alt="Portrait of Chien-Shiung Wu (1912-1997), experimental physicist" class="frise__card-img"
+                        loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">CHIEN-SHIUNG WU</h3>
+                    <p class="frise__card-period">(1912-1997)</p>
+                    <p class="frise__card-field">Field: Experimental physics</p>
+
+                    <p class="frise__card-description">
+                        Experimentally confirmed parity violation in beta decay, revolutionizing particle
+                        physics. Her male colleagues, Lee and Yang, received the 1957 Nobel Prize; she did not.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "Madame Wu did the test, but not the history."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 7: Henrietta Leavitt -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-7.avif" alt="Portrait of Henrietta Leavitt (1868-1921), astronomer"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">HENRIETTA LEAVITT</h3>
+                    <p class="frise__card-period">(1868-1921)</p>
+                    <p class="frise__card-field">Field: Astronomy</p>
+
+                    <p class="frise__card-description">
+                        Discovered the relationship between luminosity and period of Cepheids, allowing measurement of
+                        distances in the universe. Her discovery served as the basis for Hubble, but her name remained
+                        absent from textbooks for decades.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "Without her, Hubble's universe would have had no scale."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 8: Nettie Stevens -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-8.avif" alt="Portrait of Nettie Stevens (1861-1912), geneticist"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">NETTIE STEVENS</h3>
+                    <p class="frise__card-period">(1861-1912)</p>
+                    <p class="frise__card-field">Field: Genetics</p>
+
+                    <p class="frise__card-description">
+                        Identified the X and Y sex chromosomes. Discovery attributed to her colleague Thomas Hunt
+                        Morgan, who would receive the Nobel Prize.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She discovered the letters of sex, but they erased her from the dictionary."
+                    </blockquote>
+                </div>
+            </article>
+
+            <!-- Card 9: Heather Couper -->
+            <article class="frise__card">
+                <div class="frise__card-image">
+                    <img src="../assets/img/frise-9.avif"
+                        alt="Portrait of Heather Couper (1949-2020), astrophysicist and science communicator"
+                        class="frise__card-img" loading="lazy">
+                </div>
+                <div class="frise__card-content">
+                    <h3 class="frise__card-title">HEATHER COUPER</h3>
+                    <p class="frise__card-period">(1949-2020)</p>
+                    <p class="frise__card-field">Field: Astrophysics, science communication</p>
+
+                    <p class="frise__card-description">
+                        Author of The Astronomy Bible, pioneer in British science communication.
+                        Often perceived as "presenter" rather than scientist, despite her training and work.
+                    </p>
+
+                    <blockquote class="frise__card-quote">
+                        "She made the stars shine at eye level."
+                    </blockquote>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__branding">
+                <a href="../index.html" class="footer__logo">
+                    <img src="../assets/icon/logo.svg" alt="Jocelyn Bell Logo" class="footer__logo-image"
+                        aria-label="Jocelyn Bell project logo">
+                </a>
+            </div>
+
+            <nav class="footer__nav" aria-label="Footer navigation">
+                <h2 class="footer__nav-title">MENU</h2>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="frise-matilda.html" class="footer__nav-link">Matilda
+                            Timeline</a>
+                    </li>
+                    <li class="footer__nav-item"><a href="a-propos.html" class="footer__nav-link">About</a></li>
+                    <li class="footer__nav-item"><a href="glossaire.html" class="footer__nav-link">Glossary</a></li>
+                    <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__social">
+                <h2 class="footer__social-title">SOCIAL</h2>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on X (formerly Twitter)">
+                            <img src="../assets/icon/x.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">X</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on YouTube">
+                            <img src="../assets/icon/ytb.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Instagram">
+                            <img src="../assets/icon/insta.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Follow us on TikTok">
+                            <img src="../assets/icon/tiktok.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__credits">
+                <p class="footer__credits-text">
+                    project carried out in 2025 as part of an educational exercise at the MMi department of Montbéliard
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+
+</html>

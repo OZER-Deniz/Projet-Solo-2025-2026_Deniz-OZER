@@ -1,0 +1,18 @@
+.featured {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-light);
+}
+
+.featured__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured__intro {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    line-height: 1.5;
+}

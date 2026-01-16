@@ -1,0 +1,140 @@
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: var(--spacing-xl) var(--spacing-md) var(--spacing-lg);
+}
+
+.footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__branding {
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    text-decoration: none;
+}
+
+.footer__logo-image {
+    width: 80px;
+    height: 80px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.footer__logo-text--first {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.1em;
+}
+
+.footer__logo-text--second {
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.1em;
+}
+
+.footer__nav {
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer__nav-title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.footer__nav-item {
+    /* Styles pour les items */
+}
+
+.footer__nav-link {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer__social {
+    margin-bottom: var(--spacing-lg);
+}
+
+.footer__social-title {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-white);
+}
+
+.footer__social-list {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.footer__social-item {
+    /* Styles pour les items sociaux */
+}
+
+.footer__social-link {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.footer__social-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+.footer__social-name {
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.footer__credits {
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__credits-text {
+    font-size: var(--font-size-xs);
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    text-align: center;
+}

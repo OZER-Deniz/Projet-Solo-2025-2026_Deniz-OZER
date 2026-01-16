@@ -1,0 +1,121 @@
+.a-propos {
+    width: 100%;
+}
+
+.a-propos__hero {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-image: url('../../../assets/img/hero-propos.avif');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(139, 69, 195, 0.1);
+}
+
+.a-propos__hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.a-propos__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.a-propos__section {
+    padding: 3rem 1rem;
+    background-color: #0A0E27;
+}
+
+.a-propos__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.a-propos__intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+    margin-bottom: 0;
+}
+
+.a-propos__values {
+    padding: 3rem 1rem;
+    background-color: #0A0E27;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.a-propos__subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #8C1EE5;
+    letter-spacing: 0.3px;
+}
+
+.a-propos__description {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+}
+
+.a-propos__pillars {
+    padding: 3rem 1rem;
+    background-color: #0A0E27;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.a-propos__pillars-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.a-propos__pillar {
+    padding-bottom: 0;
+}
+
+.a-propos__pillar:last-child {
+    padding-bottom: 0;
+}
+
+.a-propos__pillar-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #8C1EE5;
+    letter-spacing: 0.3px;
+}
+
+.a-propos__pillar-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+}
+
+.a-propos__conclusion {
+    padding: 3rem 1rem;
+    background-color: #0A0E27;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.a-propos__quote {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.6;
+    color: #e5e7eb;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+line-height: 1.6;
+color: var(--text-primary);
+text-align: center;
+}

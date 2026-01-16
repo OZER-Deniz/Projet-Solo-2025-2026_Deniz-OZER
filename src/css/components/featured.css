@@ -1,0 +1,40 @@
+/* ========================================
+   FEATURED ARTICLE SECTION
+   ======================================== */
+
+.featured {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: transparent;
+    /* use global dark background */
+}
+
+.featured__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured__intro {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.featured__article {
+    /* Utilise les styles de article-card */
+}
+
+/* Separator under the featured card */
+.featured__container::after {
+    content: "";
+    display: block;
+    width: min(320px, 70%);
+    height: 36px;
+    margin: 2.5rem auto 0;
+    background-image: url('../../../assets/icon/separateur.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

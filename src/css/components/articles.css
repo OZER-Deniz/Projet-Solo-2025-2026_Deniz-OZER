@@ -1,0 +1,28 @@
+/* ========================================
+   ARTICLES GRID SECTION
+   ======================================== */
+
+.articles {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: var(--color-light);
+}
+
+.articles__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articles__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xl);
+    text-align: center;
+    line-height: 1.4;
+}
+
+.articles__grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}

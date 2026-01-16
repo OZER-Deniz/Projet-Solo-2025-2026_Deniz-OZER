@@ -1,0 +1,39 @@
+.campaign {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: transparent;
+}
+
+.campaign__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.campaign__figure {
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.campaign__image {
+    width: 100%;
+    height: auto;
+}
+
+.campaign__content {
+    text-align: center;
+}
+
+.campaign__hashtag {
+    font-size: var(--font-size-2xl);
+    font-weight: 900;
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.05em;
+}
+
+.campaign__description {
+    font-size: var(--font-size-base);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}

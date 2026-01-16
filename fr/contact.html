@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Jocelyn Bell</title>
+    <meta name="description"
+        content="Contactez-nous pour en savoir plus sur le projet L'Effet Matilda, proposer une collaboration ou partager vos impressions.">
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/components/contact.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="../index.html" class="header__logo">
+                <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="header__logo-image"
+                    aria-label="Logo du projet Jocelyn Bell">
+                <span class="header__logo-text">
+                    <span class="header__logo-text--first">JOCELYN</span>
+                    <span class="header__logo-text--second">BELL</span>
+                </span>
+            </a>
+
+            <nav class="header__nav">
+                <div class="header__lang-selector" aria-label="Sélecteur de langue">
+                    <a href="contact.html" class="header__lang-btn header__lang-btn--active" aria-current="page"
+                        lang="fr">FR</a>
+                    <a href="../en/contact.html" class="header__lang-btn" lang="en">EN</a>
+                </div>
+
+                <button class="header__menu-btn" aria-label="Ouvrir le menu de navigation" aria-expanded="false"
+                    aria-controls="main-menu">
+                    <span class="header__menu-btn-text">MENU</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <aside class="menu" id="main-menu" aria-hidden="true">
+        <div class="menu__container">
+            <div class="menu__header">
+                <a href="../index.html" class="menu__logo">
+                    <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="menu__logo-image"
+                        aria-label="Logo du projet Jocelyn Bell">
+                    <span class="menu__logo-text">
+                        <span class="menu__logo-text--first">JOCELYN</span>
+                        <span class="menu__logo-text--second">BELL</span>
+                    </span>
+                </a>
+
+                <div class="menu__controls">
+                    <div class="menu__lang-selector" aria-label="Sélecteur de langue">
+                        <a href="contact.html" class="menu__lang-btn menu__lang-btn--active" aria-current="page"
+                            lang="fr">FR</a>
+                        <a href="../en/contact.html" class="menu__lang-btn" lang="en">EN</a>
+                    </div>
+
+                    <button class="menu__close-btn" aria-label="Fermer le menu de navigation">
+                        <span class="menu__close-icon">X</span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="menu__nav" aria-label="Navigation principale">
+                <ul class="menu__list">
+                    <li class="menu__item menu__item--expandable">
+                        <button class="menu__link menu__link--parent" aria-expanded="false"
+                            aria-controls="articles-submenu">
+                            ARTICLES
+                            <span class="menu__arrow" aria-hidden="true">▼</span>
+                        </button>
+                        <ul class="menu__submenu" id="articles-submenu">
+                            <li class="menu__subitem">
+                                <a href="article-1.html" class="menu__sublink">JOCELYN BELL BURNELL : L'ÉTOILE OUBLIÉE
+                                    DE CAMBRIDGE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-2.html" class="menu__sublink">L'EFFET MATILDA : QUAND L'HISTOIRE OUBLIE
+                                    LES FEMMES DE SCIENCE</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-3.html" class="menu__sublink">LES PULSARS : BATTEMENTS D'ÉTOILES AU
+                                    CŒUR DE L'UNIVERS</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-4.html" class="menu__sublink">2001, L'ODYSSÉE DE L'ESPACE : LE RÊVE
+                                    COSMIQUE DE KUBRICK</a>
+                            </li>
+                            <li class="menu__subitem">
+                                <a href="article-5.html" class="menu__sublink">LA BIBLE DE L'ASTRONOMIE : RACONTER LES
+                                    ÉTOILES POUR TOUS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="frise-matilda.html" class="menu__link">FRISE DES MATILDA</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="a-propos.html" class="menu__link">À PROPOS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="glossaire.html" class="menu__link">GLOSSAIRE</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact.html" class="menu__link menu__link--active" aria-current="page">CONTACT</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="autres-projet.html" class="menu__link">AUTRES PROJETS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="contact">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+            <ol class="breadcrumb__list">
+                <li class="breadcrumb__item">
+                    <a href="../index.html" class="breadcrumb__link">ACCUEIL</a>
+                </li>
+                <li class="breadcrumb__item" aria-current="page">
+                    <span class="breadcrumb__text">CONTACT</span>
+                </li>
+            </ol>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span class="hero__title-name">CONTACT</span>
+                    </h1>
+                </div>
+                <figure class="hero__figure">
+                    <img src="../assets/img/hero-reste.avif"
+                        alt="Illustration pour la page Contact du projet Jocelyn Bell" class="hero__image" role="img"
+                        aria-label="Page Contact">
+                </figure>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact__section">
+            <div class="contact__container">
+                <p class="contact__intro">Vous souhaitez en savoir plus sur le projet L'Effet Matilda - Jocelyn Bell
+                    Burnell, proposer une collaboration, ou simplement partager vos impressions ?</p>
+                <p class="contact__description">Laissez-nous un message, nous serons ravis d'échanger autour des femmes
+                    qui font (et refont) briller la science.</p>
+            </div>
+        </section>
+
+        <!-- Form Section -->
+        <section class="contact__form-section">
+            <div class="contact__container">
+                <form class="contact__form" method="POST" action="#" aria-label="Formulaire de contact">
+                    <div class="contact__form-group">
+                        <label for="contact-name" class="contact__label">Nom</label>
+                        <input type="text" id="contact-name" name="name" class="contact__input" placeholder="Votre nom"
+                            required aria-required="true">
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="contact-email" class="contact__label">Email</label>
+                        <input type="email" id="contact-email" name="email" class="contact__input"
+                            placeholder="Votre.email@exemple.com" required aria-required="true">
+                    </div>
+
+                    <div class="contact__form-group">
+                        <label for="contact-message" class="contact__label">Message</label>
+                        <textarea id="contact-message" name="message" class="contact__textarea"
+                            placeholder="Partagez vos pensées..." rows="6" required aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="contact__button">ENVOYER LE MESSAGE</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__branding">
+                <a href="../index.html" class="footer__logo">
+                    <img src="../assets/icon/logo.svg" alt="Logo Jocelyn Bell" class="footer__logo-image"
+                        aria-label="Logo du projet Jocelyn Bell">
+                </a>
+            </div>
+
+            <nav class="footer__nav" aria-label="Navigation du pied de page">
+                <h2 class="footer__nav-title">MENU</h2>
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item"><a href="frise-matilda.html" class="footer__nav-link">Frise des
+                            Matilda</a>
+                    </li>
+                    <li class="footer__nav-item"><a href="a-propos.html" class="footer__nav-link">À propos</a></li>
+                    <li class="footer__nav-item"><a href="glossaire.html" class="footer__nav-link">Glossaire</a></li>
+                    <li class="footer__nav-item"><a href="contact.html" class="footer__nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__social">
+                <h2 class="footer__social-title">RÉSEAUX</h2>
+                <ul class="footer__social-list">
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur X (anciennement Twitter)">
+                            <img src="../assets/icon/x.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">X</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur YouTube">
+                            <img src="../assets/icon/ytb.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">YouTube</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur Instagram">
+                            <img src="../assets/icon/insta.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#" class="footer__social-link" aria-label="Suivez-nous sur TikTok">
+                            <img src="../assets/icon/tiktok.svg" alt="" class="footer__social-icon" aria-hidden="true"
+                                role="presentation">
+                            <span class="footer__social-name">TikTok</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__credits">
+                <p class="footer__credits-text">
+                    projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMi de Montbéliard
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+
+</html>

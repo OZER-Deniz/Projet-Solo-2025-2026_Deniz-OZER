@@ -1,0 +1,75 @@
+.timeline-section {
+    padding: var(--spacing-xl) var(--spacing-md);
+    background-color: transparent;
+}
+
+.timeline-section__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-section__intro {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.timeline-section__card {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(10, 14, 39, 0.5);
+}
+
+.timeline-section__figure {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.timeline-section__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.timeline-section__content {
+    padding: var(--spacing-lg);
+}
+
+.timeline-section__title {
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-section__description {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-md);
+}
+
+.timeline-section__meta {
+    font-size: var(--font-size-sm);
+    color: rgba(255, 255, 255, 0.64);
+    line-height: 1.5;
+}
+
+.timeline-section__author {
+    font-weight: 600;
+}
+
+.timeline-section__date {
+    font-style: italic;
+}
+
+.timeline-section__update {
+    display: block;
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-xs);
+}

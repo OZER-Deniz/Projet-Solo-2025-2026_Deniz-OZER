@@ -1,0 +1,256 @@
+/* ======================================
+   FRISE DES MATILDA - Timeline CSS
+   Notation BEM | Mobile-First
+   ====================================== */
+
+/* Root Variables */
+:root {
+    --frise-color-primary: #8b5cf6;
+    --frise-color-secondary: #6366f1;
+    --frise-color-accent: #ec4899;
+    --frise-color-dark: #0A0E27;
+    --frise-color-card: rgba(139, 92, 246, 0.1);
+    --frise-color-text: #ffffff;
+    --frise-color-text-light: #d1d5db;
+    --frise-color-border: rgba(139, 92, 246, 0.3);
+    --frise-spacing-xs: 0.5rem;
+    --frise-spacing-sm: 1rem;
+    --frise-spacing-md: 1.5rem;
+    --frise-spacing-lg: 2rem;
+    --frise-spacing-xl: 3rem;
+    --frise-spacing-2xl: 4rem;
+}
+
+/* ======================================
+   BREADCRUMB NAVIGATION
+   ====================================== */
+
+.frise__breadcrumb {
+    padding: var(--frise-spacing-md) var(--frise-spacing-sm);
+    background-color: rgba(139, 92, 246, 0.05);
+}
+
+.frise__breadcrumb-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: var(--frise-spacing-sm);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.frise__breadcrumb-item {
+    display: flex;
+    align-items: center;
+    gap: var(--frise-spacing-xs);
+}
+
+.frise__breadcrumb-link {
+    color: var(--frise-color-primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.frise__breadcrumb-separator {
+    color: var(--frise-color-text);
+    font-size: 0.875rem;
+}
+
+.frise__breadcrumb-current {
+    color: var(--frise-color-accent);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+/* ======================================
+   INTRODUCTION SECTION
+   ====================================== */
+
+.frise__intro {
+    padding: var(--frise-spacing-lg) var(--frise-spacing-sm);
+    background-color: var(--frise-color-dark);
+}
+
+.frise__intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.frise__intro-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--frise-color-text);
+    margin: 0 0 var(--frise-spacing-sm) 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.frise__intro-subtitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--frise-color-primary);
+    margin: 0 0 var(--frise-spacing-lg) 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.frise__intro-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--frise-spacing-md);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--frise-color-text);
+}
+
+.frise__intro-text p {
+    margin: 0;
+}
+
+.frise__intro-quote {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--frise-color-accent);
+    border-left: 4px solid var(--frise-color-accent);
+    padding-left: var(--frise-spacing-md);
+    margin: var(--frise-spacing-md) 0 0 0;
+    font-style: italic;
+}
+
+/* ======================================
+   TIMELINE SECTION
+   ====================================== */
+
+.frise__timeline {
+    padding: var(--frise-spacing-2xl) var(--frise-spacing-sm);
+    background-color: var(--frise-color-dark);
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: calc(var(--frise-spacing-sm) + 40px);
+}
+
+.frise__timeline::before {
+    content: '';
+    position: absolute;
+    left: var(--frise-spacing-sm);
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg,
+            var(--frise-color-primary) 0%,
+            var(--frise-color-secondary) 50%,
+            var(--frise-color-accent) 100%);
+    border-radius: 2px;
+}
+
+.frise__timeline-title {
+    margin: 0;
+    padding: 0;
+}
+
+/* ======================================
+   CARD COMPONENT
+   ====================================== */
+
+.frise__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--frise-spacing-lg);
+    margin-bottom: var(--frise-spacing-xl);
+    margin-left: var(--frise-spacing-md);
+    background-color: var(--frise-color-card);
+    padding: var(--frise-spacing-lg);
+    border-radius: 12px;
+    border: 1px solid var(--frise-color-border);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.frise__card::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--frise-spacing-md) - 28px);
+    top: var(--frise-spacing-lg);
+    width: 56px;
+    height: 56px;
+    background-image: url('../../../assets/icon/Logo2.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--frise-color-dark);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.frise__card-image {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: var(--frise-color-light);
+}
+
+.frise__card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.frise__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--frise-spacing-sm);
+}
+
+.frise__card-title {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: var(--frise-color-text);
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+}
+
+.frise__card-period {
+    font-size: 0.875rem;
+    color: var(--frise-color-primary);
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.frise__card-field {
+    font-size: 0.875rem;
+    color: var(--frise-color-text-light);
+    font-weight: 600;
+    margin: 0;
+    opacity: 0.85;
+}
+
+.frise__card-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--frise-color-text);
+    margin: 0;
+}
+
+.frise__card-quote {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--frise-color-accent);
+    border-left: 3px solid var(--frise-color-accent);
+    padding-left: var(--frise-spacing-md);
+    margin: var(--frise-spacing-sm) 0 0 0;
+    font-style: italic;
+    line-height: 1.5;
+}

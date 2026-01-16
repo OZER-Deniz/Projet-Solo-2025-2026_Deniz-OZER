@@ -1,0 +1,333 @@
+/* ========================================
+   MENU OVERLAY
+   ======================================== */
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0b0625;
+    color: var(--color-white);
+    z-index: 200;
+    overflow-y: auto;
+    padding: var(--spacing-md);
+}
+
+.menu[aria-hidden="true"] {
+    display: none;
+}
+
+.menu__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    text-decoration: none;
+}
+
+.menu__logo-image {
+    width: 36px;
+    height: 36px;
+}
+
+.menu__logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.menu__logo-text--first {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: 0.1em;
+}
+
+.menu__logo-text--second {
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.1em;
+}
+
+.menu__controls {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.menu__lang-selector {
+    display: flex;
+    gap: var(--spacing-xs);
+}
+
+.menu__lang-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-light);
+    transition: var(--transition);
+}
+
+.menu__lang-btn--active {
+    color: var(--color-primary);
+}
+
+.menu__close-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--font-size-lg);
+    transition: var(--transition);
+}
+
+.menu__close-icon {
+    font-weight: 700;
+}
+
+.menu__nav {
+    margin-bottom: var(--spacing-xl);
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.menu__item {
+    border-bottom: 1px solid var(--color-light);
+    padding-bottom: var(--spacing-sm);
+}
+
+.menu__link {
+    display: block;
+    font-size: var(--font-size-lg);
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 0.05em;
+    padding: var(--spacing-xs) 0;
+    transition: var(--transition);
+}
+
+.menu__link--parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.menu__arrow {
+    font-size: var(--font-size-sm);
+    transition: transform var(--transition);
+}
+
+.menu__link--parent[aria-expanded="true"] .menu__arrow {
+    transform: rotate(180deg);
+}
+
+.menu__submenu {
+    display: none;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    padding-left: var(--spacing-md);
+}
+
+/* Show submenu only when parent button is expanded */
+.menu__link--parent[aria-expanded="true"]+.menu__submenu {
+    display: flex;
+}
+
+.menu__subitem {
+    /* Styles pour les sous-items */
+}
+
+.menu__sublink {
+    display: block;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 0;
+    transition: var(--transition);
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.menu__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    text-decoration: none;
+}
+
+.menu__logo-image {
+    width: 72px;
+    height: 72px;
+    display: block;
+}
+
+.menu__logo-text {
+    /* visually hide menu logo text but keep for screen readers */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.menu__logo-text--first {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--color-primary);
+    letter-spacing: 0.08em;
+}
+
+.menu__logo-text--second {
+    font-size: 0.9rem;
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: 0.08em;
+}
+
+.menu__controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.menu__lang-selector {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.menu__lang-btn {
+    padding: 0.2rem 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.85);
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.menu__lang-btn--active {
+    color: var(--color-primary);
+}
+
+.menu__close-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.06);
+    color: var(--color-white);
+    border-radius: 50%;
+    font-size: var(--font-size-lg);
+    transition: var(--transition-base);
+}
+
+.menu__close-icon {
+    font-weight: 700;
+}
+
+.menu__nav {
+    margin-bottom: 0.6rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.menu__item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    padding-bottom: 0.6rem;
+}
+
+.menu__link {
+    display: block;
+    font-size: 1.125rem;
+    /* mobile-first link size */
+    font-weight: 800;
+    color: var(--color-white);
+    letter-spacing: 0.02em;
+    padding: 0.35rem 0;
+    transition: color var(--transition-base), padding-left var(--transition-base);
+}
+
+.menu__link--parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+}
+
+.menu__arrow {
+    font-size: var(--font-size-sm);
+    transition: transform var(--transition-base);
+}
+
+.menu__link--parent[aria-expanded="true"] .menu__arrow {
+    transform: rotate(180deg);
+}
+
+
+.menu__submenu {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+/* Show submenu only when parent button is expanded (dup for mobile-first block) */
+.menu__link--parent[aria-expanded="true"]+.menu__submenu {
+    display: flex;
+}
+
+.menu__sublink {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 0.35rem 0;
+    transition: color var(--transition-base), padding-left var(--transition-base);
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;700&display=swap');
+
+/* ========================================
+   UTILS - Variables et normalization
+   ======================================== */
+@import 'utils/variables.css';
+@import 'vendors/normalize.css';
+
+/* ========================================
+   LAYOUT - Structure de base
+   ======================================== */
+@import 'layout/base.css';
+@import 'layout/header.css';
+@import 'layout/footer.css';
+
+/* ========================================
+   COMPONENTS - Composants réutilisables
+   ======================================== */
+@import 'components/hero.css';
+@import 'components/menu.css';
+@import 'components/article-card.css';
+@import 'components/featured.css';
+@import 'components/timeline.css';
+@import 'components/articles.css';
+@import 'components/matilda.css';
+@import 'components/campagne.css';
+@import 'components/frise.css';

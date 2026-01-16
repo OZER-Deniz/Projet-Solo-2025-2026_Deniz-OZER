@@ -1,0 +1,67 @@
+/* ========================================
+   MATILDA SECTION (dark, full-width)
+   ======================================== */
+
+.matilda {
+    padding: 3.5rem 1rem;
+    background-color: transparent;
+    /* relies on global body #0A0E27 */
+}
+
+.matilda__container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.matilda__content {
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+.matilda__title {
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.matilda__text {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1rem;
+}
+
+.matilda__text:last-child {
+    margin-bottom: 0;
+}
+
+.matilda__media {
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+.matilda__media img {
+    display: block;
+    margin: 0.75rem auto 0;
+    width: min(420px, 80%);
+    height: auto;
+}
+
+.matilda__caption {
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.matilda a {
+    color: #ffffff;
+    text-decoration: underline;
+}
